@@ -2,20 +2,21 @@
 
 int main()
 {
-    unsigned int a=1,b=0;
+    unsigned int a=1,n=1;
     while (a>0)
         a<<1;
-        ++a;
-    printf("the maximum number of unsigned in is:%u\n",a-1);
+        ++n;
+    printf("the maximum number of unsigned in is:%u\n",n);
       
-      unsigned int n=a-1;
-     do
+    int result;
+    int i;
+    result=1,i=0;
+    while(i<=n)
      {
-         n=n/10;
-         b++;
+         result=result*2;
+         ++i;
      }
-     while(n>0)
-     printf("there are %d\n digits in the maximum number of unsigned int",b)
+     printf("there are %d\n digits in the maximum number of unsigned int",result-1)
      
      return 0
     
