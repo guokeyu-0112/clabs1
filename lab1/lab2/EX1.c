@@ -1,23 +1,14 @@
 #include <stdio.h>
-
 int main()
 {
-    unsigned int a=1,n=1;
-    while (a>0)
-        a<<1;
-        ++n;
-    printf("the maximum number of unsigned in is:%u\n",n);
-      
-    int result;
-    int i;
-    result=1,i=0;
-    while(i<=n)
-     {
-         result=result*2;
-         ++i;
-     }
-     printf("there are %d\n digits in the maximum number of unsigned int",result-1)
-     
-     return 0
+    unsigned int a=1;
+    int m=0;
+    while (a!=0)
+    {
+        a=a<<1;
+        m++;
+    }
+    printf("unsignes int is size of %d bit.The max is %u\n",m,0-1);
+     return 0;
     
 }
